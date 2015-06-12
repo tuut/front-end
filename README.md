@@ -1,11 +1,11 @@
-# Teste para Front-end na TUUT. # 
+# Teste para Front-end na TUUT. 
 
-## Objetivo: ## 
+## Objetivo: 
 
 Desenvolver a página principal, com interações de CSS e jQuery, aplicada no WordPress. 
 
 
-## Obrigatório: ## 
+## Obrigatório: 
 
 Instalar o WordPress; 
 Criar a Página; 
@@ -16,7 +16,7 @@ A página deverá ser aberta com um lightbox de newsletter, com formulário esti
 Quando tiver 'hover' no item de menu com submenu(A RED), o banner deve ficar com blur(embaçado), sem embaçar o texto;
 
 
-## Diferenciais: ## 
+## Diferenciais: 
 
 Estilos com LESS, Sass ou Stylus;
 Formulário enviando para algum lugar; 
@@ -25,7 +25,7 @@ Custom Post type, categorias, e custom fields;
 Font-icon (pasta fonts);
 
 
-## Arquivos: ## 
+## Arquivos: 
 
 Todas as imagens já estão recortadas na pasta IMG;
 Todas as fontes do site estão na pasta FONTS;
@@ -34,7 +34,7 @@ o Layout está flat, mas existem camadas que simulam hovers; (Atentar para os no
 A cor do overlay do lightbox é: rgba(88,73,81,0.85);
 
 
-## Como enviar os arquivos? ##
+## Como enviar os arquivos? 
 
 1. Clone o projeto
    https://bitbucket.org/TUUT/teste-front-end
@@ -42,3 +42,6 @@ A cor do overlay do lightbox é: rgba(88,73,81,0.85);
 2. Crie um branch com suas alterações
 
 3. Faça um pull request
+
+
+### Boa sorte! 
