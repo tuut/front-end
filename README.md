@@ -1,5 +1,8 @@
 # Teste para Front-end na TUUT. 
 
+<p align="center"><img src="TUUT.svg"></p>
+<br>
+
 ## Sobre nós:
 Um lugar de ideias e de ação, onde estratégia e criatividade andam juntas. 
 Somos uma empresa jovem e em constante evolução. Todos os dias estamos construindo novos processos e meios de otimizar nosso trabalho.
@@ -45,15 +48,10 @@ Desenvolver a página principal, com interações de CSS e jQuery, aplicada no W
 
 ## Como enviar os arquivos? 
 
-1. Clone o projeto
-   https://github.com/tuutcreative/front-end
-
-2. Crie um branch com suas alterações
-
-3. Faça um README.md falando um pouco de você e porque você gostaria de trabalhar aqui na TUUT.
-
-4. Faça um pull request
-
+1. `Fork` ou `clone` projeto `git clone https://github.com/tuutcreative/front-end.git`
+2. Crie um `branch` com suas alterações
+3. Faça um `README.md` falando um pouco de você e porque você gostaria de trabalhar aqui na TUUT.
+4. Faça um `pull request`
 5. Não se esqueça de enviar o banco de dados! 
 
 
