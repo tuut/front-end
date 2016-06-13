@@ -1,4 +1,11 @@
-# Teste para Front-end JR. na TUUT. 
+# Teste para Front-end na TUUT. 
+
+## Sobre nós:
+Um lugar de ideias e de ação, onde estratégia e criatividade andam juntas. 
+Somos uma empresa jovem e em constante evolução. Todos os dias estamos construindo novos processos e meios de otimizar nosso trabalho.
+
+## Sobre a vaga:
+Nós sempre estamos procurando mentes brilhantes e pessoas dispostas a trabalhar e crescer juntas. Se você se identifica com a nossa cultura e nossos projetos, faça o teste e vamos conversar! :bowtie: 
 
 ## Objetivo: 
 
@@ -37,11 +44,15 @@ Desenvolver a página principal, com interações de CSS e jQuery, aplicada no W
 ## Como enviar os arquivos? 
 
 1. Clone o projeto
-   https://bitbucket.org/TUUT/teste-front-end
+   https://github.com/tuutcreative/front-end
 
 2. Crie um branch com suas alterações
 
-3. Faça um pull request
+3. Faça um README.md falando um pouco de você e porque você gostaria de trabalhar aqui na TUUT.
+
+4. Faça um pull request
+
+5. Não se esqueça de enviar o banco de dados! 
 
 
-### Boa sorte!
+### Sucesso! (Sorte é para quem não tem talento) :sunglasses:
