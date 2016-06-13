@@ -1,6 +1,6 @@
 # Teste para Front-end na TUUT. 
 
-<p align="center"><img src="TUUT.svg"></p>
+<p align="center"><img src="https://github.com/tuutcreative/front-end/blob/master/TUUT.svg"></p>
 <br>
 
 ## Sobre nós:
