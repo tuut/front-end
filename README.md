@@ -4,7 +4,7 @@
 Um lugar de ideias e de ação, onde estratégia e criatividade andam juntas. 
 Somos uma empresa jovem e em constante evolução. Todos os dias estamos construindo novos processos e meios de otimizar nosso trabalho.
 
-*Nós escolhemos trabalhar com pessoas, independente de sexo, cor, etinia, religião, orientação sexual ou nacionalidade.*
+*Nós escolhemos trabalhar com pessoas, independente de idade, sexo, cor, etinia, religião, orientação sexual ou nacionalidade.*
 
 ## Sobre a vaga:
 Nós sempre estamos procurando mentes brilhantes e pessoas dispostas a trabalhar e crescer juntas. Se você se identifica com a nossa cultura e nossos projetos, faça o teste e vamos conversar! :bowtie: 
