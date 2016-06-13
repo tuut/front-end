@@ -55,4 +55,5 @@ Desenvolver a página principal, com interações de CSS e jQuery, aplicada no W
 5. Não se esqueça de enviar o banco de dados! 
 
 
-### Sucesso! (Sorte é para quem não tem talento) :sunglasses:
+### Sucesso!  :sunglasses:
+(Sorte é para quem não tem talento)
