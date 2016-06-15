@@ -26,7 +26,7 @@ Desenvolver a página principal, com interações de CSS e jQuery, aplicada no W
 *  Notícias devem ser posts, puxados dinamicamente via WordPress;
 *  A página deverá ser aberta com um lightbox de newsletter, com formulário estilizado e botão de fechar;
 *  Quando tiver 'hover' no item de menu com submenu(A RED), o banner deve ficar com blur(embaçado), sem embaçar o texto;
-*  `RESPONSIVO`
+*  **RESPONSIVO**
 
 
 ## Diferenciais: 
