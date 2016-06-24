@@ -31,7 +31,7 @@ Desenvolver a página principal, com interações de CSS e jQuery, aplicada no W
 
 ## Diferenciais: 
 
-* Estilos com LESS, Sass ou Stylus;
+* Estilos com LESS, SASS ou Stylus;
 * Formulário enviando para algum lugar; 
 * Animações (cuidado com excessos);
 * Custom Post type, categorias, e custom fields;
