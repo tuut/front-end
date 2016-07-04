@@ -16,6 +16,8 @@ Nós sempre estamos procurando mentes brilhantes e pessoas dispostas a trabalhar
 
 Desenvolver a página principal, com interações de CSS e jQuery, aplicada no WordPress. 
 
+*Atenção ao layout é primordial.*
+
 
 ## Obrigatório: 
 
