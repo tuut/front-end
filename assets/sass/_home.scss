@@ -1,0 +1,26 @@
+.content-title{
+	width: 100%;
+	height: 60px;
+	background: rgba(215,25,32,1);
+	background: -moz-linear-gradient(left, rgba(215,25,32,1) 0%, rgba(215,25,32,1) 50%, rgba(240,74,52,1) 50%, rgba(240,74,52,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(215,25,32,1)), color-stop(50%, rgba(215,25,32,1)), color-stop(50%, rgba(240,74,52,1)), color-stop(100%, rgba(240,74,52,1)));
+	background: -webkit-linear-gradient(left, rgba(215,25,32,1) 0%, rgba(215,25,32,1) 50%, rgba(240,74,52,1) 50%, rgba(240,74,52,1) 100%);
+	background: -o-linear-gradient(left, rgba(215,25,32,1) 0%, rgba(215,25,32,1) 50%, rgba(240,74,52,1) 50%, rgba(240,74,52,1) 100%);
+	background: -ms-linear-gradient(left, rgba(215,25,32,1) 0%, rgba(215,25,32,1) 50%, rgba(240,74,52,1) 50%, rgba(240,74,52,1) 100%);
+	background: linear-gradient(to right, rgba(215,25,32,1) 0%, rgba(215,25,32,1) 50%, rgba(240,74,52,1) 50%, rgba(240,74,52,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d71920', endColorstr='#f04a34', GradientType=1 );
+	h3, a{
+		color: #fff;
+		font-family: 'Akkurat Pro';
+		font-weight: bold;
+		font-size: 15px;
+		text-transform: uppercase;
+		margin-top: 23px;
+	}
+	a{
+		color: #8c2413;
+		&:hover{
+			text-decoration:none;
+		}
+	}
+}
