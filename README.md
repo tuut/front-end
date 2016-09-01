@@ -1,62 +1,70 @@
-# Teste para Front-end na TUUT. 
+# Odin Framework #
 
-<p align="center"><img src="https://cdn.rawgit.com/tuutcreative/front-end/master/TUUT.svg"></p>
-<br>
+[Ver essa documentação em Português do Brasil](https://github.com/wpbrasil/odin/blob/master/docs/README-pt_BR.md)
 
-## Sobre nós:
-Um lugar de ideias e de ação, onde estratégia e criatividade andam juntas. 
-Somos uma empresa jovem e em constante evolução. Todos os dias estamos construindo novos processos e meios de otimizar nosso trabalho.
+![Odin Framework](https://i.imgur.com/DdeMgUx.png)
 
-*Nós escolhemos trabalhar com pessoas, independente de idade, sexo, cor, etnia, religião, orientação sexual ou nacionalidade.*
+* [Website](http://wpod.in/)
+* [Odin Expo](http://expo.wpod.in/)
+* [GitHub](https://github.com/wpbrasil/odin)
+* [WordPress Brasil Group on Facebook](https://www.facebook.com/groups/wordpress.brasil)
 
-## Sobre a vaga:
-Nós sempre estamos procurando mentes brilhantes e pessoas dispostas a trabalhar e crescer juntas. Se você se identifica com a nossa cultura e nossos projetos, faça o teste e vamos conversar! :bowtie: 
+## Project Description ##
 
-## Objetivo: 
+Welcome to Odin, a base-theme developed by [WordPress Brasil Group](https://www.facebook.com/groups/wordpress.brasil), to help on agile development of themes for WordPress.
 
-Desenvolver a página principal, com interações de CSS e jQuery, aplicada no WordPress. 
+## Installation ##
 
-*Atenção ao layout é primordial.*
+Send the folder "odin" to the default themes folder from WordPress `wp-content/themes` or send the zipball using the WordPress Theme Installer.
 
+## Documentation ##
 
-## Obrigatório: 
+Informations about how-to use the classes and functions from Odin is on the [Official Wiki](https://github.com/wpbrasil/odin/wiki/)
 
-*  Instalar o WordPress; 
-*  Criar a Página; 
-*  Menu deve ser dinâmico (via admin do wordpress);
-*  Banner e conteúdo do Banner pode ser estático (no código);
-*  Notícias devem ser posts, puxados dinamicamente via WordPress;
-*  A página deverá ser aberta com um lightbox de newsletter, com formulário estilizado e botão de fechar;
-*  Quando tiver 'hover' no item de menu com submenu(A RED), o banner deve ficar com blur(embaçado), sem embaçar o texto;
-*  **RESPONSIVO**
+## Plugins Support ##
 
+Odin supports natively these plugins:
 
-## Diferenciais: 
+* [WooCommerce](http://wordpress.org/extend/plugins/woocommerce/)
+* [JetPack](http://wordpress.org/extend/plugins/jetpack/) Infinite Scroll
 
-* Estilos com LESS, SASS ou Stylus;
-* Formulário enviando para algum lugar; 
-* Animações (cuidado com excessos);
-* Custom Post type, categorias, e custom fields;
-* Font-icon (pasta fonts);
+## References ##
 
+* [Bootstrap](http://getbootstrap.com/)
+* [Bootstrap Sass](https://github.com/twbs/bootstrap-sass)
+* [HTML5shiv](https://github.com/aFarkas/html5shiv)
+* [matchMedia() polyfill](https://github.com/paulirish/matchMedia.js/)
+* [Respond.js](https://github.com/scottjehl/Respond)
+* [Sass](http://sass-lang.com/)
+* [Compass](http://compass-style.org/)
+* [Grunt.js](http://gruntjs.com/)
+* [aq_resize](https://github.com/sy4mil/Aqua-Resizer)
+* [FitVids](https://github.com/davatron5000/FitVids.js)
+* [EditorConfig](http://editorconfig.org/)
+* [goqr.me](http://goqr.me/)
+* [Google Maps](https://developers.google.com/maps/)
 
-## Arquivos: 
+## Bugs and Sugestions ##
 
-* Todas as imagens já estão recortadas na pasta IMG;
-* Todas as fontes do site estão na pasta FONTS;
-* Existe um font-icon com nome iconmoon na pasta fonts que pode ser utilizado como plus, dando lugar às imagens do facebook, lupa, linkedin, etc;
-* o Layout está flat, mas existem camadas que simulam hovers; (Atentar para os nomes das camadas do psd, está bem explicadinho.)
-* A cor do overlay do lightbox é: rgba(88,73,81,0.85);
+The Odin Framework is an **Open Source** project. Anyone can (and should) help us to improve it.
 
+Report bugs or do suggestions using the [Issues/Project Forum](https://github.com/wpbrasil/odin/issues)
 
-## Como enviar os arquivos? 
+## Contribute to the Project ##
 
-1. `Fork` ou `clone` projeto `git clone https://github.com/tuutcreative/front-end.git`
-2. Crie um `branch` com suas alterações
-3. Faça um `README.md` falando um pouco de você e porque você gostaria de trabalhar aqui na TUUT.
-4. Faça um `pull request`
-5. Não se esqueça de enviar o banco de dados! 
+To contribute, just click on the **Fork** button, create a *Branch*, improve the code and send it with a **Pull Request**.
 
+More details about how to contribute and send Pull Requests in [GitHub Collaborating](https://help.github.com/categories/63/articles).
 
-### Sucesso!  :sunglasses:
-(Sorte é para quem não tem talento)
+[How to colaborate to opensource projects on GitHub](http://www.youtube.com/watch?v=H3olaBo83As)
+
+## Changelog ##
+
+[Changelog here!](https://github.com/wpbrasil/odin/blob/master/docs/CHANGELOG.md)
+
+## Copyright and License ##
+
+Copyright 2013 - 2016 - WordPress Brasil Group.
+
+The PHP code is licensed with [GPLv2](http://www.gnu.org/licenses/gpl-2.0.txt).
+All the CSS, SCSS, JS, images files and others, not including the PHP files is licensed with [MIT](http://opensource.org/licenses/MIT) or by the license specified inside the file.
