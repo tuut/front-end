@@ -28,12 +28,12 @@
 	<div class="hero">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2">
+				<div class="col-md-2 col-sm-3 col-xs-6">
 					<div class="brand">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><p><?php bloginfo( 'name' ); ?></p></a>
 					</div>
 				</div>
-				<div class="col-md-10">
+				<div class="col-md-10 col-sm-9 col-xs-6">
 					<div class="pull-right secondary-nav">
 						<ul id="social" class="">
 							<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
@@ -42,7 +42,7 @@
 						</ul>
 						<a href="#" class="translate-icon">EN</a>
 					</div>
-					<div class="pull-right">
+					<div class="pull-right hidden-sm hidden-xs">
 						<?php
 							wp_nav_menu(
 								array(
@@ -56,19 +56,39 @@
 						?>
 					</div>
 				</div>
+					<div class="hidden-lg hidden-md" id="hamburguer-container">
+						<div class="hamburguer pull-right">
+						  <span class="hamburguer-item"></span>
+						  <span class="hamburguer-item"></span>
+						  <span class="hamburguer-item"></span>
+						</div>
+						<div class="dropdown-hamburguer">
+							<?php
+								wp_nav_menu(
+									array(
+										'theme_location' => 'main-menu',
+										'depth'          => 2,
+										'container'      => false,
+										'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+										'walker'         => new Odin_Bootstrap_Nav_Walker()
+									)
+								);
+							?>
+						</div>
+					</div>
 			</div>
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
+				<div class="col-lg-8 col-lg-offset-2">
 					<div class="hero-content">
 						<h1>Dedicação e superação</h1>
-						<div class="col-md-10 subtitle-hero">
+						<div class="col-lg-10 subtitle-hero">
 							<h3>Apresentamos aos nossos clientes soluções que permitam formar equipes e estruturas de alta performance.</h3>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12 red-numbers">
+				<div class="col-lg-12 red-numbers">
 					<div class="red-numbers-header">
 						<h4>Red em números</h4>
 					</div>

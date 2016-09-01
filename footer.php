@@ -13,12 +13,12 @@
 	<footer id="footer" role="contentinfo">
 		<div class="container">
 				<div class="row footer-content">
-					<div class="col-md-2">
+					<div class="col-md-2 col-sm-3 col-sm-3 hidden-xs">
 						<div id="logo-footer"></div>
 					</div>
-					<div class="col-md-10">
+					<div class="col-md-10 col-sm-9 col-xs-12">
 						<div class="row">
-							<div class="col-md-2">
+							<div class="col-md-2 col-sm-4 col-xs-6">
 								<?php
 									wp_nav_menu(
 										array(
@@ -31,18 +31,18 @@
 									);
 								?>
 							</div>
-							<div class="col-md-2">
+							<div class="col-md-2 col-sm-4 hidden-xs">
 								<p>Parceiros globais:</p>
 								<div class="logo-partner"></div>
 							</div>
-							<div class="col-md-2">
+							<div class="col-md-2 col-sm-4 col-xs-6">
 								<p>Conecte-se:</p>
 								<ul id="social-footer">
 									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6 hidden-sm hidden-xs">
 								<div class="cities">
 									<div class="city">
 										<div class="city-icon" id="sp"></div>

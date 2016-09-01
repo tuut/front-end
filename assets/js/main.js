@@ -18,4 +18,10 @@ jQuery(document).ready(function($) {
 	// Tooltip.
 	$( '.odin-tooltip' ).tooltip();
 
+    // MENU
+    $('.hamburguer').click(function(){
+    $(this).toggleClass('open');
+    $('.dropdown-hamburguer').slideToggle();
+    });
+
 });

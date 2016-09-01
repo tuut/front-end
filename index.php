@@ -18,47 +18,48 @@ get_header(); ?>
 <div class="content-title">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-6 hidden-xs">
 				<h3>Red em destaque</h3>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-6">
 				<h3 class="pull-left">Notícias</h3>
 				<a href="#" class="pull-right">Ver todas</a>
 			</div>
 		</div>
 	</div>
 </div>
+<div class="index-bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<main id="content" tabindex="-1" role="main">
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<main id="content" class="<?php echo odin_classes_page_sidebar(); ?>" tabindex="-1" role="main">
+						<?php
+							if ( have_posts() ) :
+								// Start the Loop.
+								while ( have_posts() ) : the_post();
 
-					<?php
-						if ( have_posts() ) :
-							// Start the Loop.
-							while ( have_posts() ) : the_post();
+									/*
+									 * Include the post format-specific template for the content. If you want to
+									 * use this in a child theme, then include a file called called content-___.php
+									 * (where ___ is the post format) and that will be used instead.
+									 */
+									get_template_part( 'content', get_post_format() );
 
-								/*
-								 * Include the post format-specific template for the content. If you want to
-								 * use this in a child theme, then include a file called called content-___.php
-								 * (where ___ is the post format) and that will be used instead.
-								 */
-								get_template_part( 'content', get_post_format() );
+								endwhile;
 
-							endwhile;
+								// Post navigation.
+								odin_paging_nav();
 
-							// Post navigation.
-							odin_paging_nav();
+							else :
+								// If no content, include the "No posts found" template.
+								get_template_part( 'content', 'none' );
 
-						else :
-							// If no content, include the "No posts found" template.
-							get_template_part( 'content', 'none' );
+							endif;
+						?>
 
-						endif;
-					?>
-
-			</main><!-- #content -->
+				</main><!-- #content -->
+			</div>
 		</div>
 	</div>
 </div>

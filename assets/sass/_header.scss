@@ -33,11 +33,16 @@
 
 .brand{
 	a{
-		width: 165px;
-		height: 155px;
+		width: 100%;
+		max-width: 165px;
+		height: 165px;
 		display: block;
 		margin-top: 25px;
 		background: url(../images/logo.svg) no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 		p{
 			display: none;
 		}
@@ -51,7 +56,7 @@
 #social{
 	display: inline-block;
 	list-style: none;
-	padding: none;
+	padding: 0;
 	margin-bottom: 43px;
 	li{
 		display: inline-block;
@@ -134,6 +139,101 @@
 	font-family: 'Akkurat Pro';
 	font-weight: bold;
 }
+
+#hamburguer-container{
+	position: relative;
+	width: 100%;
+}
+
+.hamburguer {
+  width: 40px;
+  height: 50px;
+  margin-top: 0px;
+  margin-right: 15px;
+  display: block;
+}
+
+.hamburguer:hover {
+  cursor: pointer;
+}
+.hamburguer.open .hamburguer-item {
+  background: #fff;
+}
+.hamburguer.open .hamburguer-item:first-child {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transform-origin: 10px 50%;
+  -ms-transform-origin: 10px 50%;
+  -webkit-transform-origin: 10px 50%;
+  transform-origin: 10px 50%;
+}
+.hamburguer.open .hamburguer-item:nth-child(2) {
+  opacity: 0;
+}
+.hamburguer.open .hamburguer-item:nth-child(3) {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -moz-transform-origin: 8px 50%;
+  -ms-transform-origin: 8px 50%;
+  -webkit-transform-origin: 8px 50%;
+  transform-origin: 8px 50%;
+}
+
+.hamburguer-item {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 0 0 5px;
+  background: #fff;
+}
+
+.dropdown-hamburguer{
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: 140px;
+	z-index: 9999;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dropdown-hamburguer #menu-menu-2{
+	list-style: none;
+	padding: 0;
+	li{
+		background-color: $link-color;
+		text-align: center;
+		font-size: 24px;
+		font-family: 'Akkurat Pro';
+		font-weight: bold;
+		text-transform: uppercase;
+		a{
+			color: #fff;
+			width: 100%;
+			padding: 20px 0;
+			display: inline-block;
+			&:hover{
+				text-decoration:none;
+				background-color: $main-color;
+			};
+		}
+	}
+}
+
 
 .red-numbers{
 	margin-top: 5%;
