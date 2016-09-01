@@ -10,13 +10,65 @@
  */
 ?>
 
-		</div><!-- .row -->
-	</div><!-- #wrapper -->
-
 	<footer id="footer" role="contentinfo">
 		<div class="container">
-			<p>&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'odin' ); ?> | <?php echo sprintf( __( 'Powered by the <a href="%s" rel="nofollow" target="_blank">Odin</a> forces and <a href="%s" rel="nofollow" target="_blank">WordPress</a>.', 'odin' ), 'http://wpod.in/', 'http://wordpress.org/' ); ?></p>
-		</div><!-- .container -->
+				<div class="row footer-content">
+					<div class="col-md-2">
+						<div id="logo-footer"></div>
+					</div>
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col-md-2">
+								<?php
+									wp_nav_menu(
+										array(
+											'theme_location' => 'main-menu',
+											'depth'          => 2,
+											'container'      => false,
+											'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+											'walker'         => new Odin_Bootstrap_Nav_Walker()
+										)
+									);
+								?>
+							</div>
+							<div class="col-md-2">
+								<p>Parceiros globais:</p>
+								<div class="logo-partner"></div>
+							</div>
+							<div class="col-md-2">
+								<p>Conecte-se:</p>
+								<ul id="social-footer">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<div class="cities">
+									<div class="city">
+										<div class="city-icon" id="sp"></div>
+										<p>São Paulo</p>
+									</div>
+									<div class="city">
+										<div class="city-icon" id="rio"></div>
+										<p>Rio de Janeiro</p>
+									</div>
+									<div class="city">
+										<div class="city-icon" id="ctb"></div>
+										<p>Curitiba</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="signature">
+									<p class="pull-right"><small>© RED CONSULTING</small></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 	</footer><!-- #footer -->
 
 	<?php wp_footer(); ?>
