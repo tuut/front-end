@@ -24,4 +24,8 @@ jQuery(document).ready(function($) {
     $('.dropdown-hamburguer').slideToggle();
     });
 
+    $('.dropdown-menu').hover(function(){
+    	$('.hero-bg').toggleClass('blur-bg');
+    });    
+
 });

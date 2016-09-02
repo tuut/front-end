@@ -25,7 +25,10 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="hero">
+	<div class="hero-container">
+		<div class="bg-container">
+			<div class="hero-bg"></div>
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2 col-sm-3 col-xs-6">

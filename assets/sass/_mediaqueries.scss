@@ -1,7 +1,8 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-    .hero{height: 650px;}
-    .hero-content{ background-color: red; margin-top: 8%;}
+    .hero-container, .hero-bg{height: 650px;}
+
+    .hero-content{margin-top: 8%;}
 
     #menu-menu-1 li{
         margin-right: 5px;
@@ -11,6 +12,10 @@
         padding-left: 0;
     }
 
+/*    .red-numbers-content{
+        margin-bottom: 17px;
+    }*/
+
     .brand a{
         height: 135px;
     }
@@ -19,8 +24,8 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
-    .hero{
-        height: 510px;
+    .brand a{
+        height: 160px;
     }
 
     #social{
@@ -29,7 +34,8 @@
         }
     }
 
-    .hero-content{ background-color: blue;}
+    .hero-container, .hero-bg{height: 500px;}
+
 
     .red-numbers{
         display: none;
@@ -38,7 +44,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-    .hero-content{ background-color: green;}
+
+    .brand a{
+        height: 170px;
+    }
 
     .content-title{
         background: $main-color;
@@ -55,10 +64,9 @@
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-    .hero-content{ background-color: purple;}
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
-    .hero-content{ background-color: black;}
+
 }

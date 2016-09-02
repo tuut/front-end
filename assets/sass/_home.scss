@@ -1,6 +1,7 @@
 .content-title{
 	width: 100%;
 	height: 60px;
+	z-index: 9997;
 	background: rgba(215,25,32,1);
 	background: -moz-linear-gradient(left, rgba(215,25,32,1) 0%, rgba(215,25,32,1) 50%, rgba(240,74,52,1) 50%, rgba(240,74,52,1) 100%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(215,25,32,1)), color-stop(50%, rgba(215,25,32,1)), color-stop(50%, rgba(240,74,52,1)), color-stop(100%, rgba(240,74,52,1)));
@@ -45,6 +46,20 @@
     	display: block;
     	margin-bottom: 20px !important;
     }   
+}
+
+.post:nth-child(2):after {
+	content: url('../images/separator.svg');
+}
+
+.post-link{
+	display: block;
+	padding: 10px;
+	@include transition(0.2s);
+	&:hover{
+		background-color: #f1f2f2 !important;
+		text-decoration: none;
+	};
 }
 
 .post {

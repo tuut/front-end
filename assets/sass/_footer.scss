@@ -27,6 +27,22 @@ footer {
 	}
 }
 
+#menu-menu-3{
+	.dropdown-menu{
+		li{
+			a{
+				background-color: $main-color;
+				padding: 5px !important;
+				border-bottom: none !important;
+				&:hover{
+					color: $footer-bg-color;
+					background-color: $main-color !important;
+				};
+			}
+		}
+	}
+}
+
 .footer-content{
 	margin-top: 65px;
 }

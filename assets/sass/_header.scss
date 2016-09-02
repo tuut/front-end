@@ -1,4 +1,19 @@
-.hero{
+.hero-container{
+	position: relative;
+	width: 100%;
+	height: 770px;
+}
+
+.bg-container{
+	width: 100%;
+	height: 770px;
+	display: block;
+	overflow: hidden !important;
+	position: absolute;
+	top: 0;
+}
+
+.hero-bg{
 	width: 100%;
 	height: 770px;
 	display: block;
@@ -7,6 +22,15 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	transform: scale(1.03);
+}
+
+.blur-bg{
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
 }
 
 .hero-content {
@@ -135,6 +159,24 @@
 	text-decoration: none;
 }
 
+.dropdown-menu{
+	background: none !important;
+	box-shadow: none !important;
+	border: none !important;
+	li{
+		font-family: 'Akkurat Pro' !important;
+		font-weight: bold !important;
+		font-size: 13px !important;
+		a{
+			border-bottom: 1px solid #fff !important;
+			padding-left: 0 !important;
+			&:hover{
+				background: none !important;
+			}
+		}
+	}
+}
+
 .translate-icon{
 	font-family: 'Akkurat Pro';
 	font-weight: bold;
@@ -234,6 +276,27 @@
 	}
 }
 
+.dropdown-hamburguer #menu-menu-2 .dropdown-menu{
+	width: 100%;
+	margin-top:0;
+	padding-top: 0;
+}
+
+.dropdown-hamburguer #menu-menu-2 .dropdown-menu li a{
+	background-color: #44383e !important;
+	border-bottom: none !important;
+	&:hover{
+		background-color: $main-color !important;
+		color: #fff !important;
+	}
+}
+
+.dropdown-hamburguer #menu-menu-2 .dropdown-menu li{
+	width: 100%;
+	font-family: 'Akkurat Pro';
+	font-weight: bold;
+	text-transform: uppercase;
+}
 
 .red-numbers{
 	margin-top: 5%;
@@ -254,6 +317,7 @@
 .red-numbers-content{
 	display: flex;
 	margin-top: 20px;
+	margin-bottom: 39px;
 }
 
 .red-numbers-item{
