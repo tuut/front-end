@@ -1,0 +1,344 @@
+.hero-container{
+	position: relative;
+	width: 100%;
+	height: 770px;
+}
+
+.bg-container{
+	width: 100%;
+	height: 770px;
+	display: block;
+	overflow: hidden !important;
+	position: absolute;
+	top: 0;
+}
+
+.hero-bg{
+	width: 100%;
+	height: 770px;
+	display: block;
+	background: url(../images/banner1.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	transform: scale(1.03);
+}
+
+.blur-bg{
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.hero-content {
+	color: #fff;
+	margin-top: 15%;
+	padding-left: 15%;
+	h1{
+		font-family: 'Akkurat Pro';
+		font-weight: bold;
+		font-size: 49px;
+		text-transform: uppercase;
+		letter-spacing: -2px;
+		margin-bottom: 0;
+	}
+	h3{
+		font-size: 18px;
+		line-height: 170%;
+	}
+}
+
+.subtitle-hero {
+	padding: 0;
+}
+
+.brand{
+	a{
+		width: 100%;
+		max-width: 165px;
+		height: 165px;
+		display: block;
+		margin-top: 25px;
+		background: url(../images/logo.svg) no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+		p{
+			display: none;
+		}
+	}
+}
+
+.secondary-nav{
+	margin-top: 30px;
+}
+
+#social{
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin-bottom: 43px;
+	li{
+		display: inline-block;
+		text-align: center;
+		font-size: 12px;
+		margin-right: 20px;
+		a{
+			width: 30px;
+			height: 30px;
+			color: #fff;
+			padding-top: 6px;
+			display: inline-block;
+			border: 2px solid #fff;
+			@include transition(0.2s);
+		}
+	}
+}
+
+#social li a:hover {
+	background-color: $main-color;
+	border-color: $main-color;
+}
+
+.translate-icon{
+	width: 30px;
+	height: 30px;
+	font-family: 'Akkurat Pro';
+	font-weight: bold;
+	font-size: 11px;
+	color: #fff;
+	padding-left: 5px;
+	padding-top: 6px;
+	display: inline-block;
+	border: 2px solid #fff;
+	float: right;
+	@include transition(0.2s);
+	&:hover{
+		color: #fff;
+		text-decoration:none;
+		background-color: $main-color;
+		border-color: $main-color;
+	}
+}
+
+#menu-menu-1 {
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	position: relative;
+	li{
+		display: inline-block;
+		width: 115px;
+		padding: 0;
+		text-align: left;
+		margin: 0;
+		font-family: 'Akkurat Pro';
+		font-weight: bold;
+		margin-right: 25px;
+		a{
+			font-size: 13px;
+			text-transform: uppercase;
+			color: #fff;
+			display: inline-block;
+			width: 100%;
+			padding-bottom: 5px;
+			border-bottom: 4px solid rgb(255,255,255);
+			margin: 0;
+		}
+	}
+	li:nth-last-child(1){
+		margin-right: 0;
+	}
+}
+
+#menu-menu-1 a:hover {
+	text-decoration: none;
+}
+
+.dropdown-menu{
+	background: none !important;
+	box-shadow: none !important;
+	border: none !important;
+	li{
+		font-family: 'Akkurat Pro' !important;
+		font-weight: bold !important;
+		font-size: 13px !important;
+		a{
+			border-bottom: 1px solid #fff !important;
+			padding-left: 0 !important;
+			&:hover{
+				background: none !important;
+			}
+		}
+	}
+}
+
+.translate-icon{
+	font-family: 'Akkurat Pro';
+	font-weight: bold;
+}
+
+#hamburguer-container{
+	position: relative;
+	width: 100%;
+}
+
+.hamburguer {
+  width: 40px;
+  height: 50px;
+  margin-top: 0px;
+  margin-right: 15px;
+  display: block;
+}
+
+.hamburguer:hover {
+  cursor: pointer;
+}
+.hamburguer.open .hamburguer-item {
+  background: #fff;
+}
+.hamburguer.open .hamburguer-item:first-child {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transform-origin: 10px 50%;
+  -ms-transform-origin: 10px 50%;
+  -webkit-transform-origin: 10px 50%;
+  transform-origin: 10px 50%;
+}
+.hamburguer.open .hamburguer-item:nth-child(2) {
+  opacity: 0;
+}
+.hamburguer.open .hamburguer-item:nth-child(3) {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -moz-transform-origin: 8px 50%;
+  -ms-transform-origin: 8px 50%;
+  -webkit-transform-origin: 8px 50%;
+  transform-origin: 8px 50%;
+}
+
+.hamburguer-item {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 0 0 5px;
+  background: #fff;
+}
+
+.dropdown-hamburguer{
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: 140px;
+	z-index: 9999;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dropdown-hamburguer #menu-menu-2{
+	list-style: none;
+	padding: 0;
+	li{
+		background-color: $link-color;
+		text-align: center;
+		font-size: 24px;
+		font-family: 'Akkurat Pro';
+		font-weight: bold;
+		text-transform: uppercase;
+		a{
+			color: #fff;
+			width: 100%;
+			padding: 20px 0;
+			display: inline-block;
+			&:hover{
+				text-decoration:none;
+				background-color: $main-color;
+			};
+		}
+	}
+}
+
+.dropdown-hamburguer #menu-menu-2 .dropdown-menu{
+	width: 100%;
+	margin-top:0;
+	padding-top: 0;
+}
+
+.dropdown-hamburguer #menu-menu-2 .dropdown-menu li a{
+	background-color: #44383e !important;
+	border-bottom: none !important;
+	&:hover{
+		background-color: $main-color !important;
+		color: #fff !important;
+	}
+}
+
+.dropdown-hamburguer #menu-menu-2 .dropdown-menu li{
+	width: 100%;
+	font-family: 'Akkurat Pro';
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.red-numbers{
+	margin-top: 5%;
+}
+
+.red-numbers-header{
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	h4{
+		font-family: 'Akkurat Pro';
+		font-size: 13px;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+
+.red-numbers-content{
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 39px;
+}
+
+.red-numbers-item{
+	text-align: center;
+	color: #fff;
+	border-right: 1px solid;
+	padding: 10px 20px;
+	h3{
+		font-family: 'Akkurat Pro';
+		font-weight: bold;
+		font-size: 48px;
+		margin: 15px 0 5px 0;
+	}
+	p{
+		font-family: 'Akkurat Pro';
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 0 30px;	
+	}
+}
+
+.red-numbers-item:nth-last-child(1){
+	border-right: none;
+}

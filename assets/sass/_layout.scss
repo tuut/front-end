@@ -1,0 +1,35 @@
+* { Box-sizing: Border-box }
+
+html{
+    background-color: $bg-color;
+}
+
+body{
+    font-family: 'AkkuratPro';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($time) {
+    -o-transition: $time;
+    -ms-transition: $time;
+    -moz-transition: $time;
+    -webkit-transition: $time;
+    transition: $time;
+}
+
+a{
+    text-decoration: none;
+}
