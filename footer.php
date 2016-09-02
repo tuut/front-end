@@ -10,7 +10,7 @@
  */
 ?>
 
-	<footer id="footer" role="contentinfo">
+	<footer id="footer" role="contentinfo" class="wow fadeIn">
 		<div class="container">
 				<div class="row footer-content">
 					<div class="col-md-2 col-sm-3 col-sm-3 hidden-xs">
@@ -70,7 +70,28 @@
 				</div>
 			</div>
 	</footer><!-- #footer -->
-
 	<?php wp_footer(); ?>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox.js"></script>
+	<script>
+		new WOW().init();
+		var options = {
+			  useEasing : true, 
+			  useGrouping : true, 
+			  separator : ',', 
+			  decimal : '.', 
+			  prefix : '', 
+			  suffix : '' 
+			};
+			var days = new CountUp("days", 0, 10, 0, 2.5, options);
+			var client = new CountUp("clients", 0, 91, 0, 2.5, options);
+			var socialMedia = new CountUp("social-media", 0, 93, 0, 2.5, options);
+			var right = new CountUp("right", 0, 95, 0, 2.5, options);
+			days.start();
+			client.start();
+			socialMedia.start();
+			right.start();
+	</script>
 </body>
 </html>

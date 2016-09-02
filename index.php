@@ -15,7 +15,7 @@
 
 get_header(); ?>
 
-<div class="content-title">
+<div class="content-title wow fadeIn">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6 hidden-xs">
@@ -57,12 +57,10 @@ get_header(); ?>
 
 							endif;
 						?>
-
 				</main><!-- #content -->
 			</div>
 		</div>
 	</div>
 </div>
-
 <?php
 get_footer();

@@ -21,6 +21,7 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<script src="https://use.fontawesome.com/bb4a39399c.js"></script>
 </head>
 
@@ -31,21 +32,21 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2 col-sm-3 col-xs-6">
+				<div class="col-md-2 col-sm-3 col-xs-6 animated fadeInDown">
 					<div class="brand">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><p><?php bloginfo( 'name' ); ?></p></a>
 					</div>
 				</div>
 				<div class="col-md-10 col-sm-9 col-xs-6">
 					<div class="pull-right secondary-nav">
-						<ul id="social" class="">
+						<ul id="social" class="animated fadeInDown">
 							<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
 							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 						</ul>
-						<a href="#" class="translate-icon">EN</a>
+						<a href="#" class="translate-icon hidden-xs animated fadeInDown">EN</a>
 					</div>
-					<div class="pull-right hidden-sm hidden-xs">
+					<div class="pull-right hidden-sm hidden-xs animated fadeInDown">
 						<?php
 							wp_nav_menu(
 								array(
@@ -82,7 +83,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<div class="hero-content">
+					<div class="hero-content wow fadeIn">
 						<h1>Dedicação e superação</h1>
 						<div class="col-lg-10 subtitle-hero">
 							<h3>Apresentamos aos nossos clientes soluções que permitam formar equipes e estruturas de alta performance.</h3>
@@ -91,25 +92,25 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12 red-numbers">
+				<div class="col-lg-12 red-numbers wow fadeIn">
 					<div class="red-numbers-header">
 						<h4>Red em números</h4>
 					</div>
 					<div class="red-numbers-content">
 						<div class="red-numbers-item">
-							<h3>10</h3>
+							<h3 id="days">0</h3>
 							<p>Dias para entrega de lista de candidatos</p>
 						</div>
 						<div class="red-numbers-item">
-							<h3>91%</h3>
+							<h3><span id="clients">91</span>%</h3>
 							<p>Dos clientes da Red são recorrentes</p>
 						</div>
 						<div class="red-numbers-item">
-							<h3>93%</h3>
+							<h3><span id="social-media">93</span>%</h3>
 							<p>Recrutamento ativo. Vamos além das redes sociais.</p>
 						</div>
 						<div class="red-numbers-item">
-							<h3>95%</h3>
+							<h3><span id="right">95</span>%</h3>
 							<p>De assertividade em nossas contratações.</p>
 						</div>
 					</div>

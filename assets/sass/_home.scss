@@ -17,6 +17,7 @@
 		font-size: 15px;
 		text-transform: uppercase;
 		margin-top: 23px;
+		padding-left: 10px;
 	}
 	a{
 		color: #8c2413;
@@ -62,6 +63,13 @@
 	};
 }
 
+.post-link:hover{
+	img{
+		-webkit-filter: grayscale(0);
+		filter: grayscale(0);
+	}
+}
+
 .post {
 	width: 48%;
 	margin-bottom: 45px;
@@ -76,6 +84,9 @@
 	img{
 		display: none;
 		width: 100%;
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		filter: gray;
 	}
 	a{
 		color: $link-color;

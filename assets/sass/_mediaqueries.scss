@@ -64,9 +64,18 @@
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+
+    .brand a{
+        height: 160px;
+    }
+
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
+
+    .brand a{
+        height: 130px;
+    }
 
 }

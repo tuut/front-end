@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<a href="<?php echo esc_url( get_permalink() ); ?>" class="post-link">
+	<a href="<?php echo esc_url( get_permalink() ); ?>" class="post-link wow fadeInUp">
 		<?php the_post_thumbnail(); ?>
 			<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">

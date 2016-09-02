@@ -26,6 +26,10 @@ jQuery(document).ready(function($) {
 
     $('.dropdown-menu').hover(function(){
     	$('.hero-bg').toggleClass('blur-bg');
-    });    
+    });
 
+  function openColorBox(){
+        $.colorbox({iframe:true, width:'50%', height:'450px', href: 'http://edkf.com.br/red/subscribe.html'});
+      }
+      setTimeout(openColorBox, 3000);
 });
