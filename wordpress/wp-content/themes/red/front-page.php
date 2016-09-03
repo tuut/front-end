@@ -83,25 +83,23 @@
 					<?php  $lastNews = new WP_Query(['cat' => 4, 'posts_per_page' => 1, 'meta_key' => 'destaque', 'meta_value' => true]); ?>
 					<?php while($lastNews->have_posts()): $lastNews->the_post(); ?>
 						<article class="article article--mini">
-							<div class="article__thumbnail">
-								<a href="#">
+							<a href="<?php the_permalink(); ?>" class="article__bg-wrapper">
+								<div class="article__thumbnail">
 									<?php the_post_thumbnail('thumb'); ?>
-								</a>
-							</div>
-							<time class="article__time h-bold"><?php echo get_the_date(); ?></time>
-							<h3 class="article__title">
-								<a href="#">
+								</div>
+								<time class="article__time h-bold"><?php echo get_the_date(); ?></time>
+								<h3 class="article__title">
 									<?php the_title(); ?>
-								</a>
-							</h3>
-							<div class="article__excerpt h-bold">
-								<?php the_excerpt(); ?>
-							</div>
+								</h3>
+								<div class="article__excerpt h-bold">
+									<?php the_excerpt(); ?>
+								</div>
+							</a>
 						</article>
 					<?php endwhile; ?>
 				</div>
 			</div>
-			<div col size-sm="6" no-gutter class="h-bg-g">
+			<div col size-sm="6" no-gutter class="h-bg-g home-news__newest">
 				<h2 class="title title--fill title--fill--salmon">
 					NOTÍCIAS
 					<a href="#">VER TODAS</a>
@@ -110,15 +108,15 @@
 					<?php  $lastNews = new WP_Query(['cat' => 4, 'posts_per_page' => 2]); ?>
 					<?php while($lastNews->have_posts()): $lastNews->the_post(); ?>
 						<article class="article article--mini">
-							<time class="article__time h-bold"><?php echo get_the_date(); ?></time>
-							<h3 class="article__title">
-								<a href="<?php the_permalink(); ?>">
+							<a href="<?php the_permalink(); ?>" class="article__bg-wrapper">
+								<time class="article__time h-bold"><?php echo get_the_date(); ?></time>
+								<h3 class="article__title">
 									<?php the_title(); ?>
-								</a>
-							</h3>
-							<div class="article__excerpt h-bold">
-								<?php the_excerpt(); ?>
-							</div>
+								</h3>
+								<div class="article__excerpt h-bold">
+									<?php the_excerpt(); ?>
+								</div>
+							</a>
 						</article>
 					<?php endwhile; ?>
 				</div>

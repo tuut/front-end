@@ -6,10 +6,23 @@
 	color: colors.cinza-rosado
 	
 	&:hover
+		.article__bg-wrapper
+			background-color: colors.cinza-claro-2
+			
 		.article__thumbnail
 			filter grayscale(0)
 			-ms-filter grayscale(0)
 			-o-filter grayscale(0)
+			
+	
+		.article__title
+			color: colors.vermelho
+			
+.article__bg-wrapper
+	display block
+	background-color: transparent
+	padding 15px
+	transition .3s ease
 	
 .article__thumbnail
 	margin-bottom 40px
@@ -32,10 +45,7 @@
 	font-size 22px
 	line-height 140%
 	margin-bottom 20px
-	
-	a
-		&:hover
-			color: colors.vermelho
+	transition color .3s ease
 	
 .article__excerpt
 	color: colors.cinza
