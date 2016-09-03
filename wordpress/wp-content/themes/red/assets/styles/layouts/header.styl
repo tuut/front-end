@@ -1,0 +1,160 @@
+.header
+	position absolute
+	z-index 10
+	top 0
+	left 0
+	width 100%
+	padding 40px 0
+	
+	a
+		color: colors.branco
+		
+.header__menu
+	margin-top 44px
+	font-family: fonts.menu-header
+	font-size 0
+	display flex
+	justify-content space-between
+	
+	li
+		position relative
+		width 100%
+		max-width 130px
+		margin-right 18px
+		font-size 14px
+		
+		&:last-child
+			margin-right 0
+		
+		&:hover
+			> .sub-menu
+				opacity 1
+		
+	a
+		display block
+		width 100%
+		border-bottom: 4px solid rgba(colors.branco, 60%)
+		padding-bottom 6px
+		text-transform uppercase
+		font-weight bold
+		
+		&:hover
+			border-bottom-color: colors.vermelho
+		
+	.sub-menu
+		position absolute
+		width 100%
+		top 100%
+		left 0
+		opacity 0
+		transition .3s ease
+		
+		li
+			width 100%
+			margin-right 0
+		
+		a
+			padding-top 8px
+			border-bottom-width 2px
+			
+.header__icons
+	
+	ul
+		font-size 0
+		margin 0 -9px
+		display inline-block
+	
+	li
+		display inline-block
+		vertical-align top
+		font-size 12px
+		margin 0 9px
+		
+
+#header__menu-toggler
+	display none
+
++below(sm)
+	#header__menu-toggler
+		&:checked
+			~ 
+				.header__mobile-overlay
+					opacity 1
+					visibility visible
+				.header__navs
+					right 0
+		
+				.header__mobile-btn
+					background-color: darken(colors.vermelho, 30%)
+				
+	.header__mobile-overlay
+		position fixed
+		z-index 1000
+		top 0
+		left 0
+		size(100%)
+		background-color: rgba(colors.preto, 50%)
+		opacity 0
+		visibility hidden
+		transition opacity .3s ease, visibility .3s ease
+		
+	.header__mobile-btn
+		display block
+		padding 5px
+		size(34px, 34px)
+		background-color: colors.vermelho
+		transition background-color .3s ease
+		position absolute
+		top 25px
+		right 25px
+		
+		&::before
+			content ''
+			display block
+			size(24px,4px)
+			background-color: colors.branco
+			box-shadow: 0px 10px colors.branco, 0px 20px colors.branco
+			
+		&:hover
+			background-color: darken(colors.vermelho, 30%)
+			
+	.header__navs
+		position fixed
+		z-index 1001
+		top 0
+		right -220px
+		padding-top 20px
+		padding-bottom 20px
+		size(220px, 100%)
+		background-color: colors.vermelho
+		margin-top 0
+		transition right .3s ease
+		
+	.header__menu-wrapper
+		overflow auto
+		
+	.header__menu
+		display block
+		margin-top 22px
+		
+		> li + li
+				margin-top 20px
+		
+		li 
+			max-width 100%
+			margin-right 0
+		
+		.sub-menu
+			position static
+			opacity 1
+			
+			li
+				padding-left 10px
+						
+		a
+			&:hover
+				border-bottom-color: lighten(colors.salmao,50%)
+
++below(xs)
+	.header__logo
+		max-width 180px

@@ -1,0 +1,9 @@
+size(w, h = w)
+	width w
+	height h
+	
+rem(px, base = 16)
+	return unit(px / base, 'rem')
+	
+em(px, base = 16)
+	return unit(rem(px, base), 'em')

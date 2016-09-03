@@ -1,0 +1,54 @@
+.content-container
+	padding 60px 55px 90px
+	background-color: colors.branco
+	
+.article
+	color: colors.cinza-rosado
+	
+	&:hover
+		.article__thumbnail
+			filter grayscale(0)
+			-ms-filter grayscale(0)
+			-o-filter grayscale(0)
+	
+.article__thumbnail
+	margin-bottom 40px
+	filter grayscale(1)
+	-ms-filter grayscale(1)
+	-o-filter grayscale(1)
+	will-change filter
+	transition .5s ease
+	
+	img
+		width 100%
+	
+.article__time
+	display block
+	margin-bottom 20px
+	font-size 14px
+	
+.article__title
+	text-transform uppercase
+	font-size 22px
+	line-height 140%
+	margin-bottom 20px
+	
+	a
+		&:hover
+			color: colors.vermelho
+	
+.article__excerpt
+	color: colors.cinza
+	line-height 140%
+	
+.article--mini
+	+ .article--mini
+		margin-top 50px
+	
+		&::before
+			content ''
+			display block
+			size(30px, 4px)
+			background-color: colors.vermelho
+			margin-bottom 50px
+			

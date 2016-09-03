@@ -1,0 +1,117 @@
+.hero__item
+	position relative
+	z-index 0
+	color: colors.branco
+	
+.hero__image
+	background-size cover
+	background-position center
+	background-repeat no-repeat
+	min-height 800px
+	height 100vh
+	will-change filter
+	transition .3s ease
+	
+.hero__image--blurred
+	-webkit-filter blur(15px)
+	-moz-filter blur(15px)
+	filter blur(15px)
+	transform scale(1.05)
+	
+.hero__content
+	position absolute
+	width 100%
+	top 340px
+	left 0
+	
+.hero__title
+	font-size 52px
+	text-transform uppercase
+	margin-bottom 10px
+	
+.hero__excerpt
+	font-size 19px
+	line-height 110%
+	
+.hero__details
+	text-transform uppercase
+	position absolute
+	left 0
+	bottom 0
+	width 100%
+	
+.hero__subtitle
+	font-size 14px
+	border-bottom: 2px solid rgba(colors.branco, 60%)
+	padding-bottom 10px
+	padding-left 20px
+	
+.hero__number-wrapper
+	margin-top 20px
+	margin-bottom 45px
+	text-align center
+	font-weight bold
+	border-right: 2px solid rgba(colors.branco, 60%)
+	
+	&:last-child
+		border-right none
+	
+.hero__number
+	display block
+	margin-top 20px
+	font-size 52px
+	margin-bottom 15px
+	
+.hero__number-text
+	font-size 14px
+	line-height 140%
+	
+.home-news
+	h2
+		font-size 16px
+	
++below(md)
+	.hero__content
+		top 240px
+		
+	.hero__image
+		min-height 600px
+		
+	.hero__title
+		font-size 52px
+		
++below(sm)
+	.hero__image
+		min-height 0
+		height 400px
+		
+	.hero__details
+		position static
+		padding-top 30px
+		background-color: colors.branco
+		color: colors.preto
+		
+	.hero__subtitle
+		border-bottom-color: colors.preto
+		
+	.hero__number-wrapper
+		border-right none
+		
+	.hero__number
+		font-size 36px
+		
+	.hero__number-text
+		font-size 12px
+		line-height 140%
+		
++below(xs)
+		
+	.hero__title
+		font-size 32px
+		text-transform uppercase
+		margin-bottom 10px
+		
+	.hero__excerpt
+		font-size 16px
+		line-height 110%
+	

@@ -1,0 +1,27 @@
+{
+  "name": "sepha",
+  "homepage": "https://roots.io/sage/",
+  "authors": [
+    "Ben Word <ben@benword.com>",
+    "Christian Kaisermann <christian@kaisermann.me>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "rupture-by-jenius": "^0.6.1",
+    "rolleiflex": "^0.2.0",
+    "remodal": "^1.1.0"
+  },
+  "overrides": {
+    "rupture-by-jenius": {
+      "main": "rupture/index.styl"
+    },
+    "rolleiflex": {
+      "main": "src/wrapper.styl"
+    },
+    "remodal": {
+      "dependencies": {}
+    }
+  },
+  "devDependencies": {}
+}

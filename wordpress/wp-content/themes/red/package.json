@@ -1,0 +1,65 @@
+{
+  "name": "sepha",
+  "version": "8.4.2",
+  "author": "Ben Word <ben@benword.com>",
+  "contributors": [
+    {
+      "name": "Christian Kaisermann",
+      "email": "christian@kaisermann.me"
+    }
+  ],
+  "homepage": "https://roots.io/sage/",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:chriskaisermann/sepha.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "scripts": {},
+  "engines": {
+    "node": ">= 0.12.0",
+    "npm": ">=2.1.5"
+  },
+  "devDependencies": {
+    "asset-builder": "^1.0.2",
+    "browser-sync": "^2.12.3",
+    "del": "^1.1.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-changed": "^1.2.1",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-cssstats": "^1.0.1",
+    "gulp-flatten": "0.1.1",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jshint": "^1.9.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-preprocess": "^2.0.0",
+    "gulp-print": "^2.0.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-rev": "^5.1.0",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-stylestats": "^1.2.0",
+    "gulp-stylus": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
+    "imagemin-pngcrush": "^4.0.0",
+    "jshint-stylish": "^2.0.1",
+    "lazypipe": "^1.0.1",
+    "merge-stream": "^0.1.7",
+    "minimist": "^1.1.1",
+    "postcss-assets": "^4.1.0",
+    "postcss-cssstats": "^1.0.0",
+    "postcss-position": "^0.3.0",
+    "run-sequence": "^1.0.2",
+    "traverse": "^0.6.6",
+    "wiredep": "^3.0.1"
+  },
+  "dependencies": {}
+}

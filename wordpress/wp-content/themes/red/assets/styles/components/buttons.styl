@@ -1,0 +1,39 @@
+.btn
+	cursor pointer
+	
+.icon
+	text-align center 
+	transition .3s ease
+	display inline-block
+	
+.icon--squared
+	size(26px)
+	border: 2px solid colors.branco
+	line-height 23px
+	font-size 14px
+	
+	&:hover
+		transform-origin 50% 0
+		transform scale(1.1)
+		border-color: colors.vermelho
+		color: colors.vermelho
+		
+.icon--squared--text
+	line-height 26px
+	font-size 12px
+	font-weight bold
+	
+.icon--white
+	size(36px)
+	background-color: rgba(colors.branco,40%)
+	color: colors.cinza-rosado
+	line-height 34px
+	
+	&:hover
+		background-color: rgba(colors.branco, 60%)
+		
++below(sm)
+	.icon--squared
+		&:hover
+			border-color: lighten(colors.salmao,50%)
+			color: lighten(colors.salmao,50%)
