@@ -1,0 +1,13 @@
+
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /front-end/
+	RewriteRule ^index\.php$ - [L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule . /front-end/index.php [L]
+</IfModule>
+

@@ -1,0 +1,146 @@
+/* ==================================================================
+FOOTER
+================================================================== */
+
+footer {
+	
+	padding-top: 65px;
+	
+	p {
+		text-transform: uppercase;
+		font-size: em(13px);
+		font-weight: bold;
+		color: #FFFFFF;
+		margin-bottom: 10px;
+	}
+
+	.logo {
+
+		img {
+			position: relative;
+			margin-top: -30px;
+			max-width: 130px;
+		}
+	}
+
+	.nav-footer li {
+		font-size: em(13px);
+		font-family: $AkkuratPro;
+    	font-weight: bold;
+    	text-transform: uppercase;
+		a {
+			color: #FFFFFF;
+		}
+	}
+
+	.logo-partner {
+		max-width: 75px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.cities {
+
+		width: 100%;
+
+		li {
+
+			display: block;
+			float: left;
+			width: 33%;
+			text-align: center;
+
+			& + li {
+				margin-left: 0px;
+			}
+		
+			img, object {
+				min-height: 75px;
+				margin: 0 auto;
+				max-width: 95px;
+				vertical-align: middle;
+			}
+
+			p {
+				text-align: center;
+				margin: 15px 0 0;
+			}
+		}
+
+	}
+
+	.copyright {
+
+		display: block;
+    	border-top: 1px solid #7C6E77;
+    	margin-top: 15px;
+    	padding-top: 15px;
+    	
+    	p {
+    		color: #FFFFFF;
+    		text-align: right;
+    		font-size: em(11px);
+    	}
+	}
+}
+
+.social-footer {
+
+	li {
+
+    	display: inline-block;
+    	text-align: center;
+
+    	a {
+    		font-size: 16px;
+		    color: #584951;
+		    background-color: #A69BA3;
+		    display: block;
+		    width: 35px;
+		    height: 35px;
+			padding-top: 6px;
+
+		   	&:hover {
+
+		   		color: #A69BA3;
+		    	background-color: #FFFFFF;
+		   	}
+		}
+		
+		& + li {
+
+			margin-left: 15px;
+
+		}
+	}
+}
+
+@media (max-width: 767px) {
+
+	footer {
+
+		padding-top: 45px;
+
+		.col-title {
+			text-align: center;
+		}
+
+		.cities {
+
+			border-top: 1px solid #675961;
+    		margin-top: 30px;
+    		padding-top: 15px;
+
+			li {
+				img, object {
+					padding: 0 15px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	footer {
+	}
+}

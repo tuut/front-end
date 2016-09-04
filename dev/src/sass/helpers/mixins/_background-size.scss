@@ -1,0 +1,8 @@
+// generic background
+@mixin background-size($backgroundSize) {
+	   -moz-background-size: $backgroundSize;
+	     -o-background-size: $backgroundSize;
+	    -ms-background-size: $backgroundSize;
+		-webkit-background-size: $backgroundSize;
+    	background-size: $backgroundSize;
+}

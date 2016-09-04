@@ -4,7 +4,30 @@
 */
 
 get_header(); ?>
-				
+
+<div id="modal-news" class="modal" style="display:none;">
+	<a class="close-modal"></a>
+	<form id="modal-form">
+		<div class="modal-title">
+			<h2>Receba e-mails com novidades</h2>
+		</div>
+		<div class="modal-body">
+			<h3>Para se cadastrar, preencha os campos abaixo:</h3>
+			<div class="form-group">
+				<label for="nome">Nome</label>
+				<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo*">
+			</div>
+			<div class="form-group">
+				<label for="email">E-mail</label>
+				<input type="text" class="form-control" id="email" name="email" placeholder="E-mail*">
+			</div>
+			<div class="form-group">
+				<button type="button" class="btn btn-default">Enviar</button>
+			</div>
+		</div>
+	</form>
+</div>
+
 <section id="news">
 
 	<div class="news-header">
@@ -61,11 +84,5 @@ get_header(); ?>
 	</div>
 
 </section>
-
-<div id="modal-news" class="modal">
-  <p><a id="more" href="#more">More!</a></p>
-  <form>
-  </form>
-</div>
 
 <?php get_footer(); ?>

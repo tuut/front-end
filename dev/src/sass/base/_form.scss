@@ -1,0 +1,59 @@
+::-webkit-input-placeholder {
+   color: #272727;
+}
+
+:-moz-placeholder {
+   color: #272727;
+}
+
+::-moz-placeholder {
+   color: #272727;
+}
+
+:-ms-input-placeholder {  
+   color: #272727;
+}
+
+.form-group {
+
+	margin-bottom: 20px;
+
+	input[type="text"] {
+		border: none none;
+	    box-shadow: none;
+	    color: #6d6d6d;
+	    background-color: #E6E7E8;
+	    font-size: em(16px);
+	    letter-spacing: 0.02em;
+	    margin-bottom: 0;
+	    width: 100%;
+	    padding: 20px 45px 20px 20px;
+	    border: 0 none;
+	    overflow:hidden;
+	    text-overflow: ellipsis;
+	    outline: none;
+	    text-transform: uppercase;
+	    font-weight: bold;
+	}
+
+	label {
+		display: none;
+	}
+
+	button {
+		border: 0 none;
+		box-shadow: none;
+		color: #FFFFFF;
+		background-color: $color-red;
+		width: 100%;
+		padding: 20px;
+		font-size: em(16px);
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-top: 5px;
+		&:hover {
+			cursor: pointer;
+			background-color: $color-purple;
+		}
+	}
+}

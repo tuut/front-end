@@ -1,0 +1,117 @@
+/* ==================================================================
+PAGE
+================================================================== */
+
+html {
+	min-height: 100%;
+}
+
+body {
+	font-family: $AkkuratPro;
+    font-size: $browser-context;
+	font-weight: 400;
+	background-color: #584951;
+    color: #929497;
+	line-height: 1.4;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+}
+
+p {
+	margin: 0 0 20px 0;
+	font-size: em(14px);
+	line-height: 1.2em;
+}
+
+.text-big p {
+	font-size: em(16px);
+	line-height: 1.4em;
+}
+
+li {
+	font-size: 14px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.25s linear 0s;
+
+	&:hover {
+		text-decoration: none;
+		color: inherit;
+	}
+	
+    &:focus{
+		border: none;
+		outline: none;
+		outline-offset: 0;
+	}
+
+}
+
+img, object, embed, video, iframe, iframe[style] {
+  max-width: 100%;
+  height: auto;
+}
+
+a.svg {
+    position: relative;
+    display: inline-block;
+    &:after {
+          content: ""; 
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left:0;
+    }
+}
+
+.list-inline > li {
+	display: inline;
+}
+
+.italic, em {
+	font-style: italic;
+}
+
+.container, .container-fluid {
+    max-width: 1280px !important;
+}
+.sr-only {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+[role="button"] {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: em(50px);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
