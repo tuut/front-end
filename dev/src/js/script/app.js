@@ -31,6 +31,7 @@ App = function () {
 		$('#modal-news').modal({
 		    fadeDuration: 250,
 		    escapeClose: false,
+		    clickClose: false
 		  });
 	}
 
