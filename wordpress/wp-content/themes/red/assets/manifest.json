@@ -1,0 +1,35 @@
+{
+	"dependencies": {
+		"main.js": {
+			"files": [
+				"scripts/main.js"
+			],
+			"bower": ["remodal"],
+			"vendor": ["assets/scripts/vendor/*.js"],
+			"main": true
+		},
+		"main.css": {
+			"files": [
+				"styles/wrapper.styl"
+			],
+			"vendor": ["assets/styles/vendor/reset.css","assets/styles/vendor/*.css"],
+			"bower": ["remodal"],
+			"main": true
+		},
+		"editor-style.css": {
+			"files": [
+				"styles/tinymce.styl"
+			]
+		}
+	},
+	"config": {
+		"prefixes": ["last 2 versions","android 4","opera 12"],
+		"devUrl": "10.0.1.10/tuut/wordpress/"
+	}
+	,
+	"paths":
+	{
+		"source": "assets/",
+		"dist": "dist/"
+	}
+}

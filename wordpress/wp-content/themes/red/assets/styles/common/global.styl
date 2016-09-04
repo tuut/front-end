@@ -1,0 +1,75 @@
+// Default
+*
+*:before
+*:after
+	box-sizing border-box
+
+input
+button
+textarea
+	&:focus
+	&:focus:active
+		outline none
+	
+html
+	font-size _base-font-size 
+	
+body
+	font-family: fonts.body
+	
+a
+	&:hover
+		text-decoration none
+	
+// Generic
+.title
+	display block
+	font-weight bold
+	
+.title--tiny
+	font-size 13px
+	
+.title--fill
+	padding 28px 42px 20px
+	width 100%
+	
+	a
+		color: rgba(colors.preto, 50%)
+		display block
+		float right
+		
+		&:hover
+			text-decoration underline
+		
+	&::after
+		content ''
+		display block
+		clear both
+		
+.title--fill--red
+	background-color: colors.vermelho
+	color:colors.branco
+	
+.title--fill--salmon
+	background-color: colors.salmao
+	color:colors.branco
+	
+// Newsletter
+.newsletter-modal
+	text-align left
+	
+	h1
+		text-transform uppercase
+		font-size 22px
+		color: colors.vermelho
+		
+	h2
+		font-size 20px
+		font-weight normal
+		color: colors.vermelho
+		
+	hr
+		border none
+		border-top: 1px solid colors.cinza-claro-3
+		margin 45px 0 10px 0 
+		

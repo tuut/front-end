@@ -1,0 +1,66 @@
+.footer
+	background-color: colors.cinza-rosado
+	padding 65px 0 65px
+	color: colors.branco
+	font-family: fonts.menu-footer
+	
+.footer__logo
+	img
+		max-width 130px
+		
+.footer__links
+.footer__places
+	margin-top 38px
+	text-transform uppercase
+	
+.footer__links
+	padding-left 30px
+	.title
+		margin-bottom 10px
+	
+.footer__menu
+	font-size 13px
+	font-weight bold
+	li
+		
+		+ li 
+			margin-top 5px
+			
+	a
+		color: colors.branco
+		&:hover
+			text-decoration underline
+			
+.footer__social
+	li + li
+		margin-left 20px
+		
+.footer__places
+	.title
+		margin-top 10px
+		
+.footer__copyright
+	margin-top 40px
+	margin-left 15px
+	border-top: 2px solid rgba(colors.branco, 20%)
+	padding-top 20px
+	font-size 12px
+	
++below(sm)
+	.footer__links
+	.footer__copyright
+		margin-left 0
+		padding-left 0
+	
++below(xs)
+	.footer
+		padding-left 15px
+		padding-right 15px
+		
+	.footer__partners
+	.footer__social
+		margin-top 45px
+		
+	.footer__logo
+		img
+			margin 0 auto
