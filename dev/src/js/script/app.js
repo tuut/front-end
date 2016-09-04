@@ -40,6 +40,7 @@ App = function () {
 
 			handleScrollReveal();
 
+			// abrir a modal
 			setTimeout(handleOpenModal, 8000);
 
 			$('.sub-menu').on('mouseenter', function() {
