@@ -30,7 +30,7 @@ App = function () {
 	
 		$('#modal-news').modal({
 		    fadeDuration: 250,
-		    fadeDelay: 2
+		    escapeClose: false,
 		  });
 	}
 
