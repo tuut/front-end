@@ -3,6 +3,7 @@
 <strong>Live Preview</strong><br />
 http://52.26.96.19/tuut/
 </p>
+
 <p>
 <strong>Login (wp-admin)</strong><br />
 > Usuário: administrador<br />
