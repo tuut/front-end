@@ -4,10 +4,10 @@ AddEncoding gzip svgz
 
 <IfModule mod_rewrite.c>
 	RewriteEngine On
-	RewriteBase /front-end/
+	RewriteBase /tuut/
 	RewriteRule ^index\.php$ - [L]
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule . /front-end/index.php [L]
+	RewriteRule . /tuut/index.php [L]
 </IfModule>
 
