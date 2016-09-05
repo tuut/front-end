@@ -1,62 +1,28 @@
-# Teste para Front-end na TUUT. 
+Olá, meu nome é Marcos Paulo Malta sou Baiano, tenho 31 anos. 
+Me mudei em Maio aqui para o Rio de Janeiro, com minha familia e esposa, 
+e estou procurando re-alocação aqui no mercado de trabalho do Rio.
 
-<p align="center"><img src="https://cdn.rawgit.com/tuutcreative/front-end/master/TUUT.svg"></p>
-<br>
+Meu último trabalho foi em uma fábrica de software no Parque Tecnólogico da Bahia, onde me envolvia com todo o tipo de projeto. Comecei como Desenvolvedor Front-End,
+e depois de 8 meses passei a Desenvolvedor Web, onde fiquei encarregado do projeto (Front-End/Back-End): http://www.ampeb.org.br/, o portal da Associação do Ministério
+Público da Bahia, feito totalmente em Wordpress linkado com os serviços internos da AMPEB em Angular, usando REST.
+   
+Procuro fazer carreira aqui na cidade grande, sou determinado, focado, gosto de desafios e não tenho medo de novas tecnologias pois acredito que quanto mais
+sou desafiado mas posso aprimorar meus conhecimentos e agregar valor a empresa para evoluirmos juntos, chegando há resultados positivos. 
+Espero que a TUUT possa me dar essa oportunidade, pois percebi que é uma empresa que está sempre envolvida em desafios e com grandes resultados, e eu posso acrescentar
+ainda mais a TUUT, mostrando todo meu potencial e foco. 
+Sobre a minha localização, tenho fácil acesso ao centro do Rio, indo pelo metrô até Ipanema.
 
-## Sobre nós:
-Um lugar de ideias e de ação, onde estratégia e criatividade andam juntas. 
-Somos uma empresa jovem e em constante evolução. Todos os dias estamos construindo novos processos e meios de otimizar nosso trabalho.
+##Sobre o teste:
 
-*Nós escolhemos trabalhar com pessoas, independente de idade, sexo, cor, etnia, religião, orientação sexual ou nacionalidade.*
+Geralmente começo pelo FRONT-END do portal, e depois agrego no Wordpress. São os arquivos:
+Usei SASS, e a parte responsiva juntamente com o modal da newsletter com Bootstrap em SASS.
 
-## Sobre a vaga:
-Nós sempre estamos procurando mentes brilhantes e pessoas dispostas a trabalhar e crescer juntas. Se você se identifica com a nossa cultura e nossos projetos, faça o teste e vamos conversar! :bowtie: 
+* pasta 'front' [pasta só com a parte FRONT-END do portal]
+* Banco de dados [wptuut.sql];
+* Senha para acesso ao admin-php do Wordpress, Login:TUUT, Senha:123;
+* Criei Post type 'oportunidade' que ao clicar no menu-oportunidade é direcionado a tela que mostra todas as oportunidades cadastradas no Wordpress.
+As demais telas criei dentro do WP também, veja o fluxo.
 
-## Objetivo: 
+Caso tenha alguma dúvida, por favor me reporte.
 
-Desenvolver a página principal, com interações de CSS e jQuery, aplicada no WordPress. 
-
-*Atenção ao layout é primordial.*
-
-
-## Obrigatório: 
-
-*  Instalar o WordPress; 
-*  Criar a Página; 
-*  Menu deve ser dinâmico (via admin do wordpress);
-*  Banner e conteúdo do Banner pode ser estático (no código);
-*  Notícias devem ser posts, puxados dinamicamente via WordPress;
-*  A página deverá ser aberta com um lightbox de newsletter, com formulário estilizado e botão de fechar;
-*  Quando tiver 'hover' no item de menu com submenu(A RED), o banner deve ficar com blur(embaçado), sem embaçar o texto;
-*  **RESPONSIVO**
-
-
-## Diferenciais: 
-
-* Estilos com LESS, SASS ou Stylus;
-* Formulário enviando para algum lugar; 
-* Animações (cuidado com excessos);
-* Custom Post type, categorias, e custom fields;
-* Font-icon (pasta fonts);
-
-
-## Arquivos: 
-
-* Todas as imagens já estão recortadas na pasta IMG;
-* Todas as fontes do site estão na pasta FONTS;
-* Existe um font-icon com nome iconmoon na pasta fonts que pode ser utilizado como plus, dando lugar às imagens do facebook, lupa, linkedin, etc;
-* o Layout está flat, mas existem camadas que simulam hovers; (Atentar para os nomes das camadas do psd, está bem explicadinho.)
-* A cor do overlay do lightbox é: rgba(88,73,81,0.85);
-
-
-## Como enviar os arquivos? 
-
-1. `Fork` ou `clone` projeto `git clone https://github.com/tuutcreative/front-end.git`
-2. Crie um `branch` com suas alterações
-3. Faça um `README.md` falando um pouco de você e porque você gostaria de trabalhar aqui na TUUT.
-4. Faça um `pull request`
-5. Não se esqueça de enviar o banco de dados! 
-
-
-### Sucesso!  :sunglasses:
-(Sorte é para quem não tem talento)
+Aguardo um retorno de vocês. Obrigado.
