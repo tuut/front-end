@@ -1,0 +1,58 @@
+
+.container { 
+	
+	margin: 0 4%;
+	width:92%;
+}
+
+
+
+/*	SELF CLEARING FLOATS - CLEARFIX METHOD */
+.container:after,
+.row:after, 
+.col:after, 
+.clr:after, 
+.group:after { 
+	content: ""; 
+	display: table; 
+	clear: both; 
+}
+
+/* 	DEFAULT ROW STYLES 
+	Set bottom padding according to preference */
+.row { padding-bottom: 0em;
+}
+			
+								  
+/* DEFAULT COLUMN STYLES */
+.col { 
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+
+	.grid_1 { width: 8.33333333333%; }
+	.grid_2 { width: 16.6666666667%; }
+	.grid_3 { width: 25%; }
+	.grid_4 { width: 33.3333333333%; }
+	.grid_5 { width: 41.6666666667%; }
+	.grid_6 { width: 50%; }
+	.grid_7 { width: 58.3333333333%; }
+	.grid_8 { width: 66.6666666667%; }
+	.grid_9 { width: 75%; }
+	.grid_10 { width: 83.3333333333%; }
+	.grid_11 { width: 91.6666666667%; }
+	.grid_12 { width: 100%; }
+	
+
+
+@media ( max-width : 768px ) {
+.col {
+display: block;
+	float: none;
+	width: 100%;
+}
+
+}
+	
