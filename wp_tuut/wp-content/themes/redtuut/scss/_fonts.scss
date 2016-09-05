@@ -1,0 +1,67 @@
+$font_dir: '../fonts/';
+
+@font-face {
+    font-family: 'akkprobd';
+    src: url($font_dir+'akkbdpro1.eot'); /* IE9 Compat Modes */
+    src: url($font_dir+'akkbdpro1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url($font_dir+'akkbdpro1.woff') format('woff'), /* Modern Browsers */
+   url($font_dir+'akkbdpro1.ttf') format('truetype'), /* Safari, Android, iOS */
+   url($font_dir+'akkbdpro1.svg') format('svg'); /* Legacy iOS */
+   font-style: normal;
+   font-stretch: normal;
+
+}
+
+
+@font-face {
+    font-family: 'akkprorg';
+    src: url($font_dir+'akkrgpro1.eot'); /* IE9 Compat Modes */
+    src: url($font_dir+'akkrgpro1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url($font_dir+'akkrgpro1.woff') format('woff'), /* Modern Browsers */
+   url($font_dir+'akkrgpro1.ttf') format('truetype'), /* Safari, Android, iOS */
+   url($font_dir+'akkrgpro1.svg') format('svg'); /* Legacy iOS */
+   font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url($font_dir+'icomoon.eot'); /* IE9 Compat Modes */
+    src: url($font_dir+'icomoon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url($font_dir+'icomoon.woff') format('woff'), /* Modern Browsers */
+   url($font_dir+'icomoon.ttf') format('truetype'), /* Safari, Android, iOS */
+   url($font_dir+'icomoon.svg') format('svg'); /* Legacy iOS */
+   font-weight: normal;
+  font-style: normal;
+
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-linkedin2:before {
+  content: "\e901";
+}
