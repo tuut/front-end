@@ -5,24 +5,30 @@
 
 get_header(); ?>
 
+<?php if(have_posts()): the_post(); ?>
+
+
 <div id="modal-news" class="modal" style="display:none;">
-	<a class="close-modal"></a>
-	<form id="modal-form">
+	<a class="close-modal"><?php echo __('Fechar', APP_TD);?></a>
+	<form action="<?php the_permalink(); ?>" id="modal-form" name="modal-form" method="post">
+	<input type="hidden" id="_wpnonce" name="_wpnonce" value="<?php echo wp_create_nonce("leadsave"); ?>" />
+	<input type="hidden" name="action" id="action" value="leadsave" />
+
 		<div class="modal-title">
-			<h2>Receba e-mails com novidades</h2>
+			<h2><?php echo __('Receba e-mails com novidades', APP_TD);?></h2>
 		</div>
 		<div class="modal-body">
-			<h3>Para se cadastrar, preencha os campos abaixo:</h3>
+			<h3><?php echo __('Para se cadastrar, preencha os campos abaixo:', APP_TD);?></h3>
 			<div class="form-group">
-				<label for="nome">Nome</label>
-				<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo*">
+				<label for="nome"><?php echo __('Nome completo', APP_TD);?>*</label>
+				<input type="text" class="form-control" id="nome" name="nome" placeholder="<?php echo __('Nome completo', APP_TD);?>*" />
 			</div>
 			<div class="form-group">
-				<label for="email">E-mail</label>
-				<input type="text" class="form-control" id="email" name="email" placeholder="E-mail*">
+				<label for="email"><?php echo __('E-mail', APP_TD);?>*</label>
+				<input type="text" class="form-control" id="email" name="email" placeholder="<?php echo __('E-mail', APP_TD);?>*" />
 			</div>
 			<div class="form-group">
-				<button type="button" class="btn btn-default">Enviar</button>
+				<button type="submit" class="btn btn-default" role="button"><?php echo __('Enviar', APP_TD);?></button>
 			</div>
 		</div>
 	</form>
@@ -84,5 +90,7 @@ get_header(); ?>
 	</div>
 
 </section>
+
+<?php endif; ?>
 
 <?php get_footer(); ?>

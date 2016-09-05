@@ -31,7 +31,8 @@ gulp.task('vendor', function () {
 			'./src/js/vendor/scrollreveal.js',
 			'./src/js/vendor/jquery/jquery.easing.js',
 			'./src/js/vendor/jquery/jquery.blockui.min.js',
-			'./src/js/vendor/jquery.modal.js'
+			'./src/js/vendor/jquery.modal.js',
+			'./src/js/vendor/jquery-validate/dist/jquery.validate.js'
 		])
 		.pipe(concat('vendor.js'))
 		.pipe(gulp.dest('../wp-content/themes/tuut/assets/js/'))

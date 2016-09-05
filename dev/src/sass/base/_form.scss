@@ -57,3 +57,10 @@
 		}
 	}
 }
+
+div.help-inline {
+	font-size: em(14px);
+	padding: 5px;
+	text-align: right;
+	color: $color-red;
+}

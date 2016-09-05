@@ -63,10 +63,10 @@ remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
 	INCLUDES
 ###########################*/
 
-require 'includes/class-assets.php';
 require 'includes/class-functions.php';
-require 'includes/class-ajax.php';
 require 'includes/class-post-types.php';
+require 'includes/class-assets.php';
+require 'includes/class-ajax.php';
 
 /*########################## 
 	PLUGINS
