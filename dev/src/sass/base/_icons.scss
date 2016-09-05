@@ -1,0 +1,64 @@
+/* ==================================================================
+ICONES
+================================================================== */
+
+[class^="icon-"],
+[class*=" icon-"] {
+	font-family: $icomoon !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-error:before {
+	content: "\e600";
+}
+
+.icon-close:before {
+	content: "\e601";
+}
+
+.icon-success:before {
+	content: "\e602";
+}
+
+.icon-gplus:before {
+	content: "\e603";
+}
+
+.icon-search:before {
+	content: "\f002";
+}
+
+.icon-twitter:before {
+	content: "\f099";
+}
+
+.icon-facebook:before {
+	content: "\f09a";
+}
+
+.icon-linkedin:before {
+	content: "\f0e1";
+}
+
+.icon-article:before {
+	content: "\f0f6";
+}
+
+.icon-arrow-left:before {
+	content: "\f104";
+}
+
+.icon-arrow-right:before {
+	content: "\f105";
+}
+
+.icon-caret:before {
+	content: "\f107";
+}

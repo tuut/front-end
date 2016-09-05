@@ -1,0 +1,4 @@
+/* Calcula porcentagem de margens e paddings */
+@function calc_blocks($some-number, $another-number: 1280px){
+  @return ($some-number / $another-number) * 100%;
+}
